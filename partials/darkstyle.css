@@ -1,0 +1,96 @@
+:root {
+    --pri-color: rgb(61, 61, 61);
+    --sec-color: rgb(45, 45, 45);
+    --tri-color: rgb(36, 36, 36);
+    --text-color: rgb(227, 227, 227);
+}
+
+.header-theme {
+    background-color: var(--tri-color);
+    color: rgb(213, 213, 213);
+}
+
+.header-theme:hover {
+
+    color: white;
+}
+
+.form-element {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 6px 12px;
+    width: 100%;
+    background-color: var(--sec-color);
+    color: var(--text-color);
+}
+
+.transform:hover {
+    transform: scale(1.07);
+    background-color: var(--sec-color);
+    color: var(--text-color);
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: rgb(0, 149, 255);
+    border: primary;
+}
+
+.box:hover {
+    transform: scale(1);
+}
+
+.box {
+    transform: scale(0.9);
+}
+
+.btn-success:hover {
+    background-color: white;
+    color: green;
+    border: success;
+}
+
+.theme {
+    background-color: var(--pri-color);
+    color: var(--text-color);
+}
+
+.card-theme {
+    background-color: var(--sec-color);
+    color: var(--text-color);
+}
+
+.second_box,
+.second_box2 {
+
+    display: none;
+}
+
+#alert1,
+#alert2,
+#alert3,
+#alert4,
+#alert5,
+#alert6,
+#alert7,
+#alert8,
+#alertotp {
+    color: rgb(245, 65, 65);
+}
+
+.backbtn {
+    background-color: rgb(59, 59, 59);
+}
+.backbtn:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+.cover {
+    position:absolute;
+    height: 350px;
+    width: 100%;
+    top: 0;
+    background-color:rgb(0, 0, 0);
+    opacity: 0.60;
+
+}
