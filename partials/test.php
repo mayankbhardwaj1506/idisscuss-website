@@ -1,7 +1,7 @@
 <?php
 include('smtp/PHPMailerAutoload.php');
 
-echo smtp_mailer('mayankbhardwaj2125@gmail.com','Subject','html');
+echo smtp_mailer('email','Subject','html');
 function smtp_mailer($to,$subject, $msg){
 	$mail = new PHPMailer(); 
 	$mail->IsSMTP(); 
@@ -12,9 +12,9 @@ function smtp_mailer($to,$subject, $msg){
 	$mail->IsHTML(true);
 	$mail->CharSet = 'UTF-8';
 	//$mail->SMTPDebug = 2; 
-	$mail->Username = "mayankbhardwaj1506@gmail.com";
-	$mail->Password = "vywolnghedbiurai";
-	$mail->SetFrom("mayankbhardwaj1506@gmail.com");
+	$mail->Username = "enter email";
+	$mail->Password = "enter app password";
+	$mail->SetFrom("enter email");
 	$mail->Subject = $subject;
 	$mail->Body =$msg;
 	$mail->AddAddress($to);
