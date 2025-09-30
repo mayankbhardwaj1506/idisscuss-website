@@ -9,8 +9,8 @@ $alert=false;
 $error=false;
 
 if($_SERVER['REQUEST_METHOD']=='POST') {
-    $mail = $_POST['email'];
-    $password = $_POST['passward'];
+    $mail = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
+    $password = htmlspecialchars($_POST['password'], ENT_QUOTES, 'UTF-8');
     
     $check = true;
 
